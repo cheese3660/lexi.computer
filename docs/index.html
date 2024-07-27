@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+    // A test script
+    import { GraphicsContext, ScreenDrawingContext, make_character, WHITE, BLACK} from './modules/graphics.mjs';
+
+    const block_char = make_character('█');
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -8,15 +14,13 @@
     <div id="screen">
         <p class="nospace">
             ████████████████████████████████████████████████████████████████████████████████
-        </p>
-        <p class="nospace">
+        </p><p class="nospace">
             █&nbsp;Hello&nbsp;and&nbsp;welcome&nbsp;to&nbsp;my&nbsp;site!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█
         </p><p class="nospace">
             █&nbsp;This&nbsp;site&nbsp;is&nbsp;under&nbsp;construction&nbsp;so&nbsp;have&nbsp;some&nbsp;placeholder&nbsp;stuff!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█
         </p><p class="nospace">
             █&nbsp;Thank&nbsp;you!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█
-        </p>
-        <p class="nospace">
+        </p><p class="nospace">
             ████████████████████████████████████████████████████████████████████████████████
         </p>
     </div>
