@@ -1,0 +1,16 @@
+body {
+    background-color: #000;
+}
+
+#screen {
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+p {
+    color: #fff;
+}
+
+.nospace {
+    margin: 0;
+}
