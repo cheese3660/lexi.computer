@@ -1,8 +1,10 @@
 body {
     background-color: #000;
+    white-space-collapse: preserve-spaces;
 }
 
 #screen {
+    font-family: monospace;
     max-width: fit-content;
     margin-inline: auto;
 }
