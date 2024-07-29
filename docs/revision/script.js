@@ -47,7 +47,7 @@ function refresh_window(hash) {
             break;
     }
 }
-refresh_window(window.location.hash);
+refresh_window(window.location.hash.slice(1));
 document.getElementById("about").onclick = (event) => {
     refresh_window("about");
 };
