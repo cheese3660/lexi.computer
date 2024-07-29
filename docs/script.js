@@ -34,15 +34,31 @@ function refresh_window(hash) {
     switch (hash) {
         case "contact":
             fetch_and_write_uri(contact_uri);
+            document.getElementById("contact").classList.add("selected-button");
+            document.getElementById("about").classList.remove("selected-button");
+            document.getElementById("projects").classList.remove("selected-button");
+            document.getElementById("support").classList.remove("selected-button");
             break;
         case "projects":
             fetch_and_write_uri(projects_uri);
+            document.getElementById("contact").classList.remove("selected-button");
+            document.getElementById("about").classList.remove("selected-button");
+            document.getElementById("projects").classList.add("selected-button");
+            document.getElementById("support").classList.remove("selected-button");
             break;
         case "support":
             fetch_and_write_uri(support_uri);
+            document.getElementById("contact").classList.remove("selected-button");
+            document.getElementById("about").classList.remove("selected-button");
+            document.getElementById("projects").classList.remove("selected-button");
+            document.getElementById("support").classList.add("selected-button");
             break;
         case "about":
         default:
+            document.getElementById("contact").classList.remove("selected-button");
+            document.getElementById("about").classList.add("selected-button");
+            document.getElementById("projects").classList.remove("selected-button");
+            document.getElementById("support").classList.remove("selected-button");
             fetch_and_write_uri(about_uri);
             break;
     }

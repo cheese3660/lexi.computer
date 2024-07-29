@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script>
-    // A test script
-    import { GraphicsContext, ScreenDrawingContext, make_character, WHITE, BLACK} from './modules/graphics.mjs';
+<html lang="en">
 
-    const block_char = make_character('█');
-</script>
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexi.Computer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="screen">
-        <p class="nospace">
-            ████████████████████████████████████████████████████████████████████████████████
-        </p><p class="nospace">
-            █&nbsp;Hello&nbsp;and&nbsp;welcome&nbsp;to&nbsp;my&nbsp;site!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█
-        </p><p class="nospace">
-            █&nbsp;This&nbsp;site&nbsp;is&nbsp;under&nbsp;construction&nbsp;so&nbsp;have&nbsp;some&nbsp;placeholder&nbsp;stuff!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█
-        </p><p class="nospace">
-            █&nbsp;Thank&nbsp;you!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█
-        </p><p class="nospace">
-            ████████████████████████████████████████████████████████████████████████████████
-        </p>
+    <div id="content">
+        <div id="title">Lexi.Computer</div>
+        <div id="things">
+            <div id="leftPane">
+                <a href="#about" id="about" class="project-button">About</a>
+                <a href="#projects" id="projects" class="project-button">Projects</a>
+                <a href="#contact" id="contact" class="project-button">Contact</a>
+                <a href="#support" id="support" class="project-button">Support</a>
+            </div>
+            <div id="rightPane">
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

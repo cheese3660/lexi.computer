@@ -1,20 +1,78 @@
 body {
-    background-color: #000;
-    white-space-collapse: preserve-spaces;
-}
-
-#screen {
-    font-family: monospace;
-    max-width: fit-content;
-    margin-inline: auto;
-    padding: 0;
-    border-radius: 0;;
-}
-
-p {
-    color: #fff;
-}
-
-.nospace {
     margin: 0;
+    padding: 0;
+    background: black;
+    color: limegreen;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#content {
+    text-align: center;
+    width: 75%;
+    border: 3px solid green;
+    padding: 0 0 0vw;
+}
+
+#title {
+    border-bottom: 3px solid green;
+    padding: 2vh 0;
+}
+
+#things {
+    display: flex;
+}
+
+#leftPane {
+    border-right: 2px solid green;
+    padding: 2vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    height: 75vh;
+    min-width: 15%;
+}
+#rightPane {
+    text-align: center;
+    min-width: 25vw;
+    padding: 2vw 2vh;
+    text-wrap: balance;
+    overflow-x: hidden;
+}
+
+#about-me {
+    text-align: left;
+}
+
+a {
+    color: green;
+    padding: 1vh 0;
+    text-decoration: underline dotted;
+}
+
+a.project-button {
+    color: green;
+    padding: 0;
+    font-size: x-large;
+    /* text-decoration: underline dotted; */
+    text-decoration: none;
+}
+
+a.project-button:hover {
+    color: black;
+    background-color: green;
+}
+
+a.project-button.selected-button {
+    color: black;
+    background-color: green;
+}
+
+a.project-button.selected-button:hover {
+    color: darkgray;
+    background-color: darkgreen;
 }
